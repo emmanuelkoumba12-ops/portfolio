@@ -35,7 +35,6 @@ export default function Tools() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <p className="text-green-400 text-sm uppercase tracking-[0.3em] mb-3">06</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-white uppercase tracking-wide mb-3">
             Outils &amp; Technologies
           </h2>

@@ -53,7 +53,6 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <p className="text-green-400 text-sm uppercase tracking-[0.3em] mb-3">03</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-white uppercase tracking-wide mb-3">
             Expériences
           </h2>

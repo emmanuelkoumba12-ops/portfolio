@@ -85,11 +85,16 @@ function ProjectModal({ project, onClose }) {
 
             {/* Extra screenshots */}
             {project.screenshots && project.screenshots.length > 1 && (
-              <div className="px-8 pb-8 grid grid-cols-2 gap-4">
-                {project.screenshots.slice(1).map((src, i) => (
-                  <img key={i} src={src} alt={`${project.title} screenshot ${i + 2}`}
-                    className="w-full aspect-video object-cover border border-gray-800" />
-                ))}
+              <div className="px-8 pb-8">
+                <h3 className="text-sm uppercase tracking-widest text-green-400 mb-4">Captures d'écran</h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                  {project.screenshots.map((src, i) => (
+                    <img key={i} src={src} alt={`${project.title} screenshot ${i + 1}`}
+                      className="w-full aspect-video object-contain bg-gray-800 border border-gray-800 hover:border-green-500 transition-colors cursor-zoom-in"
+                      onError={(e) => { e.target.style.display = 'none'; }}
+                    />
+                  ))}
+                </div>
               </div>
             )}
           </motion.div>
@@ -123,7 +128,6 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <p className="text-green-400 text-sm uppercase tracking-[0.3em] mb-3">02</p>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white uppercase tracking-wide mb-3">
               Portfolio
             </h2>
@@ -149,14 +153,14 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.1 * idx }}
-                className="relative group cursor-pointer overflow-hidden"
+                className="relative group cursor-pointer overflow-hidden bg-gray-800"
                 style={{ aspectRatio: '4/3' }}
                 onClick={() => setSelected(project)}
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80'; }}
                 />
                 {/* Overlay au hover */}

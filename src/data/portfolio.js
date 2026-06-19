@@ -9,7 +9,7 @@ export const personalInfo = {
   cvUrl: "/cv-emmanuel-koumba.pdf",
   github: "https://github.com/emmanuel-koumba",
   linkedin: "https://linkedin.com/in/emmanuel-koumba",
-  bio: "Étudiant titulaire d'une Licence Professionnelle en Bases de Données, Réseaux et Web. Doté d'une expérience pratique acquise en stage dans une structure informatique, j'ai eu à intervenir sur des missions variées de support technique, d'administration réseau et de développement web.",
+  bio: "Titulaire d'une Licence Professionnelle en Bases de Données, Réseaux et Web. Doté d'une expérience pratique acquise en stage dans une structure informatique, j'ai eu à intervenir sur des missions variées de support technique, d'administration réseau et de développement web.",
   bioExtended: "Autonome, rigoureux et orienté solutions, je combine créativité et rigueur technique pour transformer des idées en produits digitaux concrets. J'aime relever des défis complexes et continuer à apprendre chaque jour pour rester à la pointe des technologies.",
 };
 
@@ -105,7 +105,11 @@ export const projects = [
     description: "Application web de gestion des demandes d'intervention informatique au sein du Ministère de la Réforme. Permet de soumettre, suivre et traiter les tickets d'assistance technique.",
     details: "Développée lors de mon stage au Ministère, cette application centralise toutes les demandes d'intervention du parc informatique. Elle permet aux agents de soumettre leurs problèmes techniques et aux techniciens de les traiter efficacement avec un suivi en temps réel.",
     image: "/projects/Demande d'intervention.png",
-    screenshots: ["/projects/Demande d'intervention.png"],
+    screenshots: [
+      "/projects/Demande d'intervention.png",
+      "/projects/demande d'intervention-1.png",
+      "/projects/demande d'intervention-2.png",
+    ],
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     github: "#",
     demo: "#",
@@ -119,7 +123,12 @@ export const projects = [
     description: "Système de sauvegarde et d'archivage sécurisé des données numériques du Ministère de la Réforme. Gestion centralisée des fichiers et récupération en cas d'incident.",
     details: "Diboti est une solution de sauvegarde développée pour sécuriser les données critiques du Ministère. Il automatise les sauvegardes, gère les versions des fichiers et permet une restauration rapide en cas de perte ou de corruption des données.",
     image: "/projects/sauvegarde des données du ministere.jpeg",
-    screenshots: ["/projects/sauvegarde des données du ministere.jpeg"],
+    screenshots: [
+      "/projects/sauvegarde des données du ministere.jpeg",
+      "/projects/gestion de donnée-1.jpeg",
+      "/projects/gestion de donnée-2.jpeg",
+      "/projects/gestion de donnée-3.jpeg",
+    ],
     technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
     github: "#",
     demo: "#",
@@ -133,7 +142,11 @@ export const projects = [
     description: "Plateforme éducative numérique destinée aux étudiants gabonais. Offre des ressources pédagogiques, des cours en ligne et un suivi de la progression des apprenants.",
     details: "EduGabon est une plateforme e-learning conçue pour démocratiser l'accès à l'éducation de qualité au Gabon. Elle propose des cours structurés, des exercices interactifs et un tableau de bord pour suivre la progression de chaque étudiant.",
     image: "/projects/plateforme educatif.png",
-    screenshots: ["/projects/plateforme educatif.png"],
+    screenshots: [
+      "/projects/plateforme educatif.png",
+      "/projects/edugabon1.png",
+      "/projects/edugabon2.png",
+    ],
     technologies: ["React", "PHP", "MySQL", "Bootstrap"],
     github: "#",
     demo: "#",
