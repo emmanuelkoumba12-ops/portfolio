@@ -153,6 +153,25 @@ export const projects = [
     featured: true,
     category: "Plateforme",
   },
+  {
+    id: 4,
+    title: "CaveGab Pro",
+    subtitle: "Gestion moderne des caves à vin",
+    description: "Solution numérique conçue pour moderniser la gestion des caves à vin. De l'inventaire des bouteilles au suivi des ventes, en passant par l'analyse des performances et la valorisation du stock.",
+    details: "CaveGab Pro accompagne les cavistes dans le pilotage quotidien de leur activité. Il centralise l'inventaire des bouteilles, suit les ventes en temps réel, analyse les performances commerciales et valorise le stock. Une interface intuitive pensée pour les professionnels du vin.",
+    image: "/projects/projet-cavegab.png",
+    screenshots: [
+      "/projects/projet-cavegab.png",
+      "/projects/cavegab-1.png",
+      "/projects/cavegab-2.png",
+      "/projects/cavegab-3.png",
+    ],
+    technologies: ["React", "PHP", "MySQL", "Bootstrap"],
+    github: "#",
+    demo: "#",
+    featured: true,
+    category: "Application Web",
+  },
 ];
 
 export const testimonials = [
